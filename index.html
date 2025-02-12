@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="/images/favicon-32x32.png" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Result summary</title>
+  </head>
+  <body class="bg-blue-50 justify-items-center content-center h-screen">
+    <section class="flex content-center rounded-[20px] w-5/12 shadow-[20px] bg-white">
+      <div id="main-area " class="bg-[#3a2efe] w-full px-[10px] py-[20px] justify-items-center rounded-[20px] text-white">
+        <div id="result">
+          <h3 class="font-bold justify-self-center text-white opacity-60">Your Result</h3>
+          <div id="circle" class="justify-items-center content-center rounded-[100%] my-[20px] w-[170px] h-[170px] justify-self-center bg-linear-to-b from-[#312EB5]">
+            <h1 class="font-bold text-[64px]">76</h1>
+            <p class="opacity-60">of 100</p>
+          </div>
+          <div id="main-foot" class="gap-2">
+            <p class="font-bold text-[24px] justify-self-center mb-[10px]">Great</p>
+            <p class="text-center w-4/4 font-bold text-[15px] opacity-70">
+              You scored higher than 65% of <br> the people who have taken <br> these
+              tests.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="summary" class="px-[30px] py-[10px] w-full">
+        <h3 class="font-bold text-[32px] mb-[10px]">Summary</h3>
+        <div class="summary-cards">
+          <div id="reaction" class="flex bg-red-50 p-[10px] rounded-[10px] my-[10px]" >
+            <div id="left" class="flex w-full gap-2">
+              <img src="/images/icon-reaction.svg" alt="thunder icon"/>
+              <p id="red" class="text-red-700">Reaction</p>
+            </div>
+            <div id="right">
+              <p><strong>80</strong>/100</p>
+            </div>
+          </div>
+
+          <div id="memory" class="flex bg-yellow-50 p-[10px] rounded-[10px] my-[10px]">
+            <div id="left" class="flex w-full gap-2">
+              <img src="/images/icon-memory.svg" alt="brain icon" />
+              <p id="yellow" class="text-yellow-700 ">Memory</p>
+            </div>
+            <div id="right">
+              <p><strong>92</strong>/100</p>
+            </div>
+          </div>
+
+          <div id="Verbal" class="flex bg-green-50 p-[10px] rounded-[10px] my-[10px]">
+            <div id="left" class="flex w-full gap-2">
+              <img src="/images/icon-verbal.svg" alt="brain icon" />
+              <p id="yellow" class="text-green-700 ">Verbal</p>
+            </div>
+            <div id="right">
+              <p><strong>61</strong>/100</p>
+            </div>
+          </div>
+
+          <div id="Visual" class="flex bg-blue-50 p-[10px] rounded-[10px] my-[10px]">
+            <div id="left" class="flex w-full gap-2">
+              <img src="/images/icon-visual.svg" alt="brain icon" />
+              <p id="yellow" class="text-blue-700 ">Memory</p>
+            </div>
+            <div id="right">
+              <p><strong>73</strong>/100</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn content-center justify-self-center my-[30px] w-full">
+          <button class="bg-[#3a2efe] p-[10px] w-full rounded-full text-white">Continue</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
